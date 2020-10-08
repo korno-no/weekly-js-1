@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //задание 2
+        
+        /*let stroka1= "2fpl4kjutty33" // выводит цифры с запятой
+
+        let stroka = stroka1.split('');
+
+        console.log(stroka) 
+
+        let cifry = [];
+
+            for (var ind= 0; ind < stroka.length; ind++) {
+
+         
+                stroka[ind]=stroka[ind]*1
+
+            if(stroka[ind] >= 0 ) {
+   
+            cifry.push (stroka[ind])   
+    
+            }
+      
+        }
+
+        console.log(cifry) */
+
+
+        let stroka = "2fpl4kjutty33"// выводит без запятой
+
+        let cifry = ''
+
+        for (var ind = 0; ind < stroka.length; ind++) {
+
+            if (stroka[ind] >= 0)
+
+                cifry = cifry + stroka[ind]
+        }
+        console.log(cifry)
+    </script>
+
+
+    <script>
+        //задание 3
+        var mas = [1,2,3,4, false,'a',8,'8']
+
+        var sum = 0
+
+        for( var i = 0; i < mas.length;i++){
+
+            if (typeof mas[i]==='number'){
+
+                sum=sum+mas[i]
+            }
+
+        console.log(sum)
+        }
+
+
+    </script>
+
+</body>
+
+</html>
