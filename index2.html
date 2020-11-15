@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       /*let stroka1= "2fpl4kjutty33" // выводит цифры с запятой
+
+        let stroka = stroka1.split('');
+
+        console.log(stroka)
+
+        let cifry = [];
+
+            for (var ind= 0; ind < stroka.length; ind++) {
+
+                stroka[ind]=stroka[ind]*1
+
+                if(stroka[ind] >= 0 ) {
+   
+            cifry.push (stroka[ind]) }
+        }
+
+        console.log(cifry) */
+
+
+        let stroka= "2fpl4kjutty33"
+
+        let cifry = ''
+
+        for (var ind= 0; ind < stroka.length; ind++) {
+
+            if(stroka[ind] >= 0 )
+
+            cifry=cifry+stroka[ind]
+        }
+        console.log(cifry)
+    </script>
+
+   <script>
+    //[1, 1.3, 55, 66.3, 5.3] - подсчитать количество символов которые делаться без остатка на 5
+
+        const mass =[1, 1.3, 55, 66.3, 5.3, 10]
+
+        var count=0
+
+        for(var i=0 ; i<mass.length;i++){
+
+            if (mass[i] % 5 === 0)
+
+                count=count+1
+        }   
+        console.log(count)
+    </script>
+   <script>
+       //Сделать реверс элементов массива например из ["1", "3", "vasya"] -> ["vasya", "3", "1"] при этом не использовать встроенный метод reverse()
+
+        const mas=["1", "3", "sasha"]
+
+        var obr = []
+
+
+        for(var i= mas.length-1 ; i>=0;i--){
+
+            obr.push(mas[i])
+        }
+
+        console.log(obr)
+   </script>
+   <script>
+       //Разработать функцию, в которую передаются в качестве аргументов массив типа number и его размер. Функция должна возвращать среднее арифметическое элементов массива.
+
+        function average(...theArgs){//если задавать размер отдельным числом, то наверное кто-то надо по другому всё это делать, но я не знаю как
+        
+        console.log(theArgs)
+        var sum = 0 
+
+        for (i=0;i<theArgs.length;i++){
+            
+        sum = sum + theArgs[i]
+
+        
+        }
+        var ave = sum/theArgs.length
+        console.log(ave)  
+        }
+   </script>
+   <script>
+       //Привести практический пример того когда функция может вернуть функцию?
+        function square(number) {
+
+        return number * number;
+        } // чет не поняла, что делает return
+
+   </script>
+   <script>
+       //Создать абсолютно рандомный массив имен и сделать сортировку массива не используя метод
+ 
+    function Sort (stroka) {
+
+    for (let j =stroka.length - 1; j > 0; j--) {
+        
+        for (let i = 0; i <j; i++ ) {
+            if (stroka[i] > stroka[i+1]) {
+
+                let temp=stroka[i];
+
+                stroka[i] = stroka[i+1];
+
+                stroka[i+1] = temp;
+    }}}}
+
+    var str = ["j", "o", "l", "t","a"];
+    Sort (str);
+    console.log(str)
+
+   </script>
+</body>
+</html>
